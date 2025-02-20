@@ -1,1 +1,1 @@
-# College-Website
+# University-Website
