@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!-- fontawesome css cdn -->
+<script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="uni.html"><img src="images_uni/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>>
+                <ul>
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>   
+        <!-- contact us -->
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11196.702522013897!2d77.35689839093924!3d28.612525891874743!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjp!4v1705129919993!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ Road,ABC Building</h5>
+                            <p>Noida,Uttar Pradesh,IN</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+91 8497658945</h5>
+                            <p>Monday to Saturday,10AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>info@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+
+                    <form action="font_handle.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <input type="text" name="subject"placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message"placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+   
+    
+    <!-- footer -->
+    <section class="footer">
+        <h4 class="title-about-us">About Us</h4>
+        <p>2024 © Indian Council
+            The India's international organisation for cultural relations and educational opportunities.<br>
+            A registered charity: 2200910310167 (Sonali Pal)<br> </p>
+            <div class="icons-container">
+                <i class=" icons fa fa-instagram"></i>
+            <i class=" icons fa fa-linkedin"></i> 
+            <i class=" icons fa fa-facebook"></i>
+            <i class=" icons fa fa-twitter"></i>
+            </div>
+        <p>Made with <i class="icons fa fa-heart"></i>by Sonali </p>
+    
+    </section>
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<!-- fontawesome css cdn -->
+<script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="uni.html"><img src="images_uni/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+        
+ <!-- ------courses------- -->
+ <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>  Explore the interaction of technology and society.Learn about environmental justice.Take the famous Problem of God course.<br>Our initiative courses inspire and invite you to help solve some of today's most pressing local,nationaland global issues.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Intermediate is our very basic course to begin with.Most of the students who passed thier matriculation from a recognised board join this course.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Building on our strong roots in leadership,healthcare and education,CMS is proud to offer an array of coed graduate programs for women and men who are ready to advance their careers and grow as leaders.The CMS College Community Psychology Master's program will help you to meet your goals of becoming a Licensed Professional Counselor.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>It is an internship program.During the final year of the degree we invite various big companies to visit our university so that they can give you a job.And we also offer our top placed students a chance to serve their institute as a teacher or whatever they are master in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- -----facilities---- -->
+<section class="facilities">
+    <h1>Our Facilities </h1>
+    <P>These are our great world class facilities.</P>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images_uni/library1" >
+            <h3>World Class Library</h3>
+            <p>Our library contain a collection of resarch books and guides written by well known writters.Its sitting capacity is very large.Students can also borrow books from the library for a certain period of time.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images_uni/cafeteria1" >
+            <h3>Tasty and Healthy Food</h3>
+            <p>We provide a cafeteria to the students so that they can have refreshment and get their minds fresh so that they can learn more and better.The food in cafeteria is very hygenic and economical.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images_uni/playground2.jpg" >
+            <h3>Largest Playground</h3>
+            <p>We have a large playground for the students who have great interest in sports.We also provide coaches to train the students.The coaches are former champions and olympic gold medalist.Every year there is a tournoment held where students from other institutes compete against our students. </p>
+        </div>
+    </div>
+</section>
+
+
+
+   
+    
+    <!-- footer -->
+    <section class="footer">
+        <h4 class="title-about-us">About Us</h4>
+        <p>2024 © Indian Council
+            The India's international organisation for cultural relations and educational opportunities.<br>
+            A registered charity: 2200910310167 (Sonali Pal)</p>
+            <div class="icons-container">
+                <i class=" icons fa fa-instagram"></i>
+            <i class=" icons fa fa-linkedin"></i> 
+            <i class=" icons fa fa-facebook"></i>
+            <i class=" icons fa fa-twitter"></i>
+            </div>
+        <p>Made with <i class="icons fa fa-heart"></i>by Sonali </p>
+    
+    </section>
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+        var navLinks =document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
