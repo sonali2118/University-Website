@@ -25,13 +25,4 @@ university-website/
 - Accessible design (screen reader and keyboard friendly)
 - Mobile-first layout
 
-## 🚀 Getting Started
-
-To run the website locally:
-
-1. Clone this repository:
-   
-   git clone https://github.com/sonali218/university-website.git
-- Open index.html in your browser.
-
 - No build tools or dependencies are required — just HTML and CSS.
